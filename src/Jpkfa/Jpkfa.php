@@ -48,7 +48,7 @@ class Jpkfa
             $generator = new \Jpk\GeneratorSmarty($smarty);
         }
 
-        $this->generator = $generator;
+        $this->generator = new \Jpk\GeneratorSmarty($generator);
     }
 
     public function dodajFakture(Faktura $faktura)
